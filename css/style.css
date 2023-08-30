@@ -241,27 +241,61 @@ textarea {
 }
 /* ------------------------------herro------------------------------ */
 .herro {
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 428px;
+  padding-bottom: 112px;
+  padding-top: 112px;
+
   background-color: var(--navy-blue);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg/hero-bg.jpg);
+    url(../images/bg/hero-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+  .herro {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .herro {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
 .herro-title {
+  max-width: 320px;
   color: var(--white);
-  max-width: 496px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
+@media only screen and (min-width: 768px) {
+  .herro-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .herro-title {
+    margin-bottom: 48px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .herro-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+}
+
 .herro-button {
   display: block;
   background-color: var(--iris);
