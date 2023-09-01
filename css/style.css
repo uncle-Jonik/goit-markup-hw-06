@@ -301,9 +301,7 @@ textarea {
     ),
     url(../images/bg/_mobile-herro-bg.jpg);
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-resolution: 192dpi) {
   .herro {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -322,9 +320,7 @@ textarea {
       url(../images/bg/_tablet-herro-bg.jpg);
   }
 }
-@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .herro {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -343,9 +339,7 @@ textarea {
       url(../images/bg/_pc-herro-bg.jpg);
   }
 }
-@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 1158) and (min-resolution: 192dpi) {
   .herro {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -771,8 +765,6 @@ textarea {
     column-gap: 24px;
   }
 }
-.footer-form-label {
-}
 .footer-form-input {
   width: 264px;
   height: 40px;
@@ -1185,13 +1177,8 @@ textarea {
     color: var(--ocean);
   }
 }
-
-.mobile-adress-sosial {
-}
 .mobile-address {
   margin-bottom: 48px;
-}
-.mobile-address-list {
 }
 .mobile-list-item {
   margin-bottom: 40px;
