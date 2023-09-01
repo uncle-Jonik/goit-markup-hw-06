@@ -134,7 +134,7 @@ textarea {
 /* tablet-screen */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 /* pc-screen */
@@ -154,9 +154,12 @@ textarea {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   color: var(--iris);
-  margin-right: 120px;
 }
-
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
 @media only screen and (min-width: 1158px) {
   .logo {
     margin-right: 76px;
@@ -233,7 +236,8 @@ textarea {
   height: 4px;
   border-radius: 2px;
 }
-.nav-list-content.current {
+.nav-list-content.current,
+.mobile-menu-link.current {
   color: var(--ocean);
 }
 .nav-list-content.current::after {
@@ -427,7 +431,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .benefits-list-item {
-    flex-basis: calc((100% - 1 * 24px) / 2);
+    flex-basis: calc((100% - 48px) / 2);
   }
 }
 
@@ -447,6 +451,7 @@ textarea {
   }
 }
 .benefits-list-title {
+  text-align: center;
   color: var(--navy-blue);
   margin-bottom: 8px;
 }
@@ -459,15 +464,8 @@ textarea {
     text-transform: capitalize;
   }
 }
-@media only screen and (min-width: 428px) {
-  .benefits-list-title {
-    text-align: center;
-    max-width: 396px;
-  }
-}
 @media only screen and (min-width: 768px) {
   .benefits-list-title {
-    max-width: 264px;
     text-align: start;
   }
 }
@@ -679,6 +677,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .footer-box {
+    justify-content: start;
     align-items: baseline;
     column-gap: 24px;
   }
@@ -686,6 +685,14 @@ textarea {
 @media only screen and (min-width: 1158px) {
   .footer-box {
     justify-content: space-between;
+  }
+}
+.footer-logo-text {
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 1158px) {
+  .footer-logo-text {
+    margin-bottom: 0;
   }
 }
 .footer-logo {
@@ -701,10 +708,17 @@ textarea {
 }
 .footer-text {
   max-width: 268px;
-  margin: 0 auto;
-  margin-bottom: 72px;
+
   font-weight: 400;
   color: var(--cloud);
+}
+.footer-social {
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 1158px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 .footer-social-text {
   text-align: center;
@@ -725,7 +739,6 @@ textarea {
 .footer-social-item {
   width: 40px;
   height: 40px;
-  margin-bottom: 72px;
 }
 .footer-social-link {
   display: flex;
@@ -925,9 +938,9 @@ textarea {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   transition: transform var(--animation);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 
-  width: 408px;
+  min-width: 315px;
   min-height: 584px;
 
   border-radius: 4px;
@@ -935,6 +948,19 @@ textarea {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
+
+@media only screen and (min-width: 458px) {
+  .modal {
+    min-width: 392px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    min-width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -1134,8 +1160,7 @@ textarea {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
-  padding-top: 80px;
+  padding: 80px 35px 40px 40px;
   background-color: var(--white);
   z-index: 999;
 
@@ -1184,8 +1209,8 @@ textarea {
   margin-bottom: 40px;
 }
 .mobile-list-content {
-  color: var(--slate);
-  font-size: 30px;
+  color: var(--ocean);
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
@@ -1204,26 +1229,16 @@ textarea {
 
   transition: color var(--animation);
 }
-
-/* for mobile and tablet screen */
-.mobile-list-content:active,
-.link-list-content:active {
-  color: var(--ocean);
-}
-@media only screen and (hover: hover) {
-  .mobile-list-content:hover,
-  .mobile-list-content:focus,
-  .link-list-content:hover,
-  .link-list-content:focus {
-    color: var(--ocean);
-  }
-}
-
 .mobile-social-list {
   display: flex;
   align-content: center;
   justify-content: center;
-  gap: 56px;
+  gap: 25px;
+}
+@media only screen and (min-width: 428px) {
+  .mobile-social-list {
+    gap: 56px;
+  }
 }
 .mobile-social-item {
   width: 40px;
