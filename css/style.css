@@ -299,7 +299,7 @@ textarea {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/bg/_mobile-herro-bg.jpg');
+    url(../images/bg/_mobile-herro-bg.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -309,7 +309,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/bg/_mobile-herro-bg@2x.jpg');
+      url(../images/bg/_mobile-herro-bg@2x.jpg);
   }
 }
 
@@ -319,7 +319,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/bg/_tablet-herro-bg.jpg');
+      url(../images/bg/_tablet-herro-bg.jpg);
   }
 }
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -330,7 +330,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/bg/_tablet-herro-bg@2x.jpg');
+      url(../images/bg/_tablet-herro-bg@2x.jpg);
   }
 }
 
@@ -340,7 +340,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/bg/_pc-herro-bg.jpg');
+      url(../images/bg/_pc-herro-bg.jpg);
   }
 }
 @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
@@ -351,7 +351,7 @@ textarea {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/bg/_pc-herro-bg@2x.jpg');
+      url(../images/bg/_pc-herro-bg@2x.jpg);
   }
 }
 
