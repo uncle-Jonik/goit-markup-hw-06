@@ -301,7 +301,7 @@ textarea {
     ),
     url(../images/bg/_mobile-herro-bg.jpg);
 }
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .herro {
@@ -353,7 +353,7 @@ textarea {
       ),
       url(../images/bg/_pc-herro-bg@2x.jpg);
   }
-}
+} */
 
 .herro-title {
   max-width: 320px;
@@ -1198,11 +1198,11 @@ textarea {
 }
 .mobile-list-content {
   color: var(--slate);
-  font-size: 35px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: capitalize;
 
   transition: color var(--animation);
