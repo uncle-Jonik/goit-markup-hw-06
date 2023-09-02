@@ -271,8 +271,7 @@ textarea {
 .address-list-content {
   color: var(--slate);
   font-style: normal;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   transition: var(--animation);
 }
 @media only screen and (max-width: 1157.98px) {
@@ -281,6 +280,12 @@ textarea {
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.04em;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .address-list-content {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -336,6 +341,7 @@ textarea {
 
 @media only screen and (min-width: 1158px) {
   .herro {
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -431,7 +437,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .benefits-list-item {
-    flex-basis: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -466,7 +472,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .benefits-list-title {
-    text-align: start;
+    text-align: left;
   }
 }
 .benefits-list-text {
@@ -613,9 +619,17 @@ textarea {
   column-gap: 16px;
   row-gap: 72px;
 }
+
 @media only screen and (min-width: 768px) {
   .customers-list {
+    max-width: 552px;
+    margin: 0 auto;
     column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .customers-list {
+    max-width: 1128px;
   }
 }
 .customers-items {
@@ -663,6 +677,10 @@ textarea {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+@media only screen and (min-width: 768px) {
+  .footer {
+  }
+}
 @media only screen and (min-width: 1158px) {
   .footer {
     padding-top: 100px;
@@ -677,6 +695,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .footer-box {
+    max-width: 584px;
     justify-content: start;
     align-items: baseline;
     column-gap: 24px;
@@ -685,6 +704,7 @@ textarea {
 @media only screen and (min-width: 1158px) {
   .footer-box {
     justify-content: space-between;
+    max-width: 1158px;
   }
 }
 .footer-logo-text {
